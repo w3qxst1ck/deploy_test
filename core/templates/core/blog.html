@@ -1,0 +1,125 @@
+{% extends 'core/index1.html' %}
+{% load static %}
+   {% block content %}
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'core/images/loading.gif' %}" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html"><img src="{% static 'core/images/logo.png' %}" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item ">
+                                 <a class="nav-link" href="{% url 'index-page' %}">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="{% url 'about-page' %}">About</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="{% url 'room-page' %}">Our room</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="{% url 'gallery-page' %}">Gallery</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="{% url 'blog-page' %}">Blog</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="{% url 'contact-page' %}">Contact Us</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+        <div class="back_re">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="title">
+                      <h2>Blog</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- blog -->
+      <div  class="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                    
+                     <p class="margin_0">Lorem Ipsum available, but the majority have suffered </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="{% static 'core/images/blog1.jpg' %}" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Bed Room</h3>
+                        <span>The standard chunk </span>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="{% static 'core/images/blog2.jpg' %}" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Bed Room</h3>
+                        <span>The standard chunk </span>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="{% static 'core/images/blog3.jpg' %}" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Bed Room</h3>
+                        <span>The standard chunk </span>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end blog -->
+   {% endblock content %}

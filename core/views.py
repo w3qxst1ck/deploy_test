@@ -40,3 +40,27 @@ def generate_password(request):
         'password': password,
         'password_list': password_list
     })
+
+
+def keto_index(request):
+    return render(request, 'core/index1.html')
+
+
+def about(request):
+    return render(request, 'core/about.html')
+
+
+def contact(request):
+    return render(request, 'core/contact.html')
+
+
+def blog(request):
+    return render(request, 'core/blog.html')
+
+
+def gallery(request):
+    return render(request, 'core/gallery.html')
+
+
+def room(request):
+    return render(request, 'core/room.html')
